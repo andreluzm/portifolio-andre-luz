@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Mada:wght@200..900&family=Mohave:ital,wght@0,300;1,300&family=Special+Elite&display=swap');
+
+:root {
+    --cor-background: #040D12;
+    --cor--primaria: linear-gradient(#283148, #913535);
+    --cor--secundaria: #B4A5A5;
+    --cor--hover: linear-gradient(#FFFFFF, #913535);
+
+    --fonte--primaria: "Karla", sans-serif;
+    --fonte--secundaria: "Mada", sans-serif;
+    --fonte--maquina: "Special Elite", system-ui;
+    --fonte--quartaria: "Mohave", sans-serif;
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    list-style-type: none;
+    background-color: var(--cor-background);
+    height: auto;
+    width: 100%;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-background);
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    padding: 2%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte--primaria);
+    font-size: 1.875rem;
+    font-weight: 600;
+    background-image: var(--cor--primaria);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.cabecalho__menu__link:hover {
+    background-image: var(--cor--hover);
+}
+
+/* PRIMEIRA PÁGINA */
+/* -------------------------------------------------------------------------------- */
+.portifolio {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+.portifolio__firstpage {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 15% 5% 15% 5%;
+}
+
+.portifolio__firstpage__hello {
+    font-family: var(--fonte--secundaria);
+    font-weight: 400;
+    font-size: 3.125rem;
+    color: var(--cor--secundaria);
+}
+
+.portifolio__firstpage__name {
+    font-family: var(--fonte--primaria);
+    font-size: 11rem;
+    font-weight: 300;
+    background-image: linear-gradient(#283148, #913535);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.portifolio__firstpage__subtitulo {
+    font-family: var(--fonte--maquina);
+    font-size: 1.56rem;
+    color: var(--cor--secundaria);
+    font-style: italic;
+    border-right: 2px solid #FFFFFF;
+    width: 19ch;  /*define a largura em characters, nesse caso 19 caracteres*/
+    white-space: nowrap; /*aqui diz que não quero que a linha quebre*/ 
+    overflow: hidden;
+    animation: pisca normal infinite 0.7s, escrevendo 3s steps(22) 1.7s normal both;
+}
+
+/* ANIMAÇÃO - Piscar cursos do subtitulo */
+@keyframes pisca{
+    100%{
+        border-right-color: transparent;
+    }
+}
+@keyframes escrevendo{
+    from{
+        width: 0;
+    }
+    to{
+        width: 20ch;
+    }
+}
+/* -------------------------------------------------------------------------------- */
+
+
+/* SEGUNDA PÁGINA */
+/* -------------------------------------------------------------------------------- */
+.about__secondpage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about__secondpage__titulo {
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--secundaria);
+    justify-content: center;
+    padding: 30% 0 10% 0;
+    font-size: 3.75rem;
+    font-weight: 400;
+}
+.about__secondpage__imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+.about_secondpage__texto{
+    font-family: var(--fonte--maquina);
+    color: var(--cor--secundaria);
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 130px 0 100px 0;
+}
+.about_secondpage__icones{
+    display: flex;
+    gap: 20%;
+    padding-bottom: 7%;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* TERCEIRA PÁGINA */
+
+/* -------------------------------------------------------------------------------- */
+
+/* RESPONSIVIDADE - TABLETS */
+@media (min-width: 768px) and (max-width: 1700px) {
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+    .portifolio__firstpage {
+        padding-top: 20%;
+    }
+    .portifolio__firstpage__hello {
+        font-size: 2rem;
+    }
+    
+    .portifolio__firstpage__name {
+        font-size: 7rem;
+    }
+    
+    .portifolio__firstpage__subtitulo {
+        font-size: 1.5rem;
+    }
+
+}
+/* RESPONSIVIDADE - CELULAR */
+@media (max-width: 800px) {
+                    /* primeira página */    
+    /* !!!!!!! - ADICIONAR MENU LATERAL */
+    .portifolio__firstpage__hello {
+        font-size: 2rem;
+    }
+    .portifolio__firstpage__name {
+        font-size: 4rem;
+    }
+    .portifolio__firstpage__subtitulo {
+        font-size: 1.rem;
+    }
+    .portifolio__firstpage {
+        padding-top: 40%;
+    }
+    .cabecalho__menu {
+        display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
+    }
+                    /* segunda página */
+    .about__secondpage__titulo {
+        padding: 100% 0 10% 0;
+        font-size: 1.5rem;
+    }
+    .about__secondpage__imagens {
+        gap: 30px;    
+    }
+    .fotos {
+        width: 100px;
+    }
+
+
+}
