@@ -183,6 +183,14 @@ body{
     .portifolio__firstpage__subtitulo {
         font-size: 1rem;
     }
+    .about__secondpage__titulo {
+        font-size: 2rem;
+        padding: 30% 0 5% 0;
+    }
+    .about_secondpage__texto{
+        font-size: 1rem;
+        padding: 5% 0 100px 0;
+    }
 
 }
 /* RESPONSIVIDADE - CELULAR */
