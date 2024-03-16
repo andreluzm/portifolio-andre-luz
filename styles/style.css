@@ -187,6 +187,9 @@ body{
         font-size: 2rem;
         padding: 30% 0 5% 0;
     }
+    .fotos {   /* criado o .fotos apenas para definir o tamanho da foto no @media */
+        width: 200px;
+    }
     .about_secondpage__texto{
         font-size: 1rem;
         padding: 5% 0 100px 0;
