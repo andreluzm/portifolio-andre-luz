@@ -181,14 +181,13 @@ body{
     }
     
     .portifolio__firstpage__subtitulo {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
 }
 /* RESPONSIVIDADE - CELULAR */
 @media (max-width: 800px) {
-                    /* primeira página */    
-    /* !!!!!!! - ADICIONAR MENU LATERAL */
+                    /* primeira página */   
     .portifolio__firstpage__hello {
         font-size: 2rem;
     }
@@ -196,7 +195,7 @@ body{
         font-size: 4rem;
     }
     .portifolio__firstpage__subtitulo {
-        font-size: 1.rem;
+        font-size: 1rem;
     }
     .portifolio__firstpage {
         padding-top: 40%;
@@ -204,6 +203,8 @@ body{
     .cabecalho__menu {
         display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
     }
+        /* !!!!!!! - ADICIONAR MENU LATERAL */
+
                     /* segunda página */
     .about__secondpage__titulo {
         padding: 100% 0 10% 0;
@@ -212,9 +213,13 @@ body{
     .about__secondpage__imagens {
         gap: 30px;    
     }
-    .fotos {
+    .fotos {   /* criado o .fotos apenas para definir o tamanho da foto no @media */
         width: 100px;
+       
     }
-
+    .about_secondpage__texto{
+        font-size: .8rem;
+        padding: 10% 0 10% 0;
+    }
 
 }
