@@ -29,6 +29,17 @@
     background-image: var(--cor--hover);
 }
 
+/* .lista-menu {
+    display: none;
+}
+.cabecalho__botao:checked~.lista-menu {
+    display: block;
+} */
+
+
+
+
+
 /* RESPONSIVIDADE - TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
     .cabecalho__menu__link {
