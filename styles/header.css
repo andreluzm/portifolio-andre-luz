@@ -51,8 +51,8 @@
         padding: 4% 4% 0 0;
     }
     .cabecalho__menu__celular{
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
         display: inline-block;
         background-image: url("../assets/list.svg");
     }

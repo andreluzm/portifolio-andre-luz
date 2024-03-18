@@ -128,8 +128,7 @@ body{
     justify-content: center;
 }
 /* TERCEIRA PÁGINA */
-.about_thirdpage{
-}
+
 .about_thirdpage__titulo{
     font-family: var(--fonte--secundaria);
     color: var(--cor--secundaria);
@@ -140,11 +139,10 @@ body{
     padding: 8% 0 10% 0;
 }
 /* -------------------------------------------------------------------------------- */
-
 /* RESPONSIVIDADE - TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
     .portifolio__firstpage {
-        padding-top: 20%;
+        padding-top: 25%;
     }
     .portifolio__firstpage__hello {
         font-size: 2rem;
@@ -183,7 +181,7 @@ body{
         font-size: 1rem;
     }
     .portifolio__firstpage {
-        padding-top: 40%;
+        padding-top: 60%;
     }
                     /* segunda página */
     .about__secondpage__titulo {
@@ -193,7 +191,7 @@ body{
     .about__secondpage__imagens {
         gap: 30px;    
     }
-    .fotos {   /* criado o .fotos apenas para definir o tamanho da foto no @media */
+    .fotos {   /* tamanho da foto no celular */
         width: 100px;
        
     }
