@@ -29,13 +29,13 @@
     background-image: var(--cor--hover);
 }
 
-/* .lista-menu {
+
+.lista-menu { /* FUNÇÃO DO MENU CELULAR */
     display: none;
 }
-.cabecalho__botao:checked~.lista-menu {
+.cabecalho__botao:checked~.lista-menu { /* FUNÇÃO DO MENU CELULAR */
     display: block;
-} */
-
+}
 
 
 
@@ -53,15 +53,15 @@
     .cabecalho {
         background-color: transparent;
     }
-    .cabecalho__menu {
+    .cabecalho__menu { /* FUNÇÃO DO MENU CELULAR */
         display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
     }
     .cabecalho__celular{
         display: flex;
-        justify-content: flex-end;
-        padding: 4% 4% 0 0;
+        justify-content: flex-start;
+        padding: 4% 0 0 4%;
     }
-    .cabecalho__menu__celular{
+    .cabecalho__menu__celular{ /* FUNÇÃO DO MENU CELULAR */
         width: 26px;
         height: 26px;
         display: inline-block;
