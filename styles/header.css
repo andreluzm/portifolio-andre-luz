@@ -29,21 +29,20 @@
     background-image: var(--cor--hover);
 }
 
-
-.lista-menu { /* FUNÇÃO DO MENU CELULAR */
+.cabecalho__botao{
     display: none;
 }
-.cabecalho__botao:checked~.lista-menu { /* FUNÇÃO DO MENU CELULAR */
-    display: block;
+.lista-menu { /* FUNÇÃO DO MENU CELULAR */
+    display: none;
+    padding: 6% 0 0 0;
 }
-
 
 
 
 /* RESPONSIVIDADE - TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
     .cabecalho__menu__link {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -56,15 +55,24 @@
     .cabecalho__menu { /* FUNÇÃO DO MENU CELULAR */
         display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
     }
+    .cabecalho__menu__link {
+        font-size: 1.15rem;
+        padding: 1em;
+    }
     .cabecalho__celular{
         display: flex;
-        justify-content: flex-start;
-        padding: 4% 0 0 4%;
     }
-    .cabecalho__menu__celular{ /* FUNÇÃO DO MENU CELULAR */
+    .imagem__lista{ 
         width: 26px;
         height: 26px;
-        display: inline-block;
-        background-image: url("../assets/list.svg");
+        display: flex;
+        position: absolute;
+
+    }
+    .cabecalho__botao:checked~.lista-menu { /* FUNÇÃO DO MENU CELULAR */
+        display: block;
+        background-image: var(--cor--menu-hamburguer);
+        padding: 5%;
+        text-align: center;
     }
 }

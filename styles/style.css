@@ -5,6 +5,7 @@
     --cor--primaria: linear-gradient(#283148, #913535);
     --cor--secundaria: #B4A5A5;
     --cor--hover: linear-gradient(#FFFFFF, #913535);
+    --cor--menu-hamburguer: linear-gradient(#0D0732, #000000);
 
     --fonte--primaria: "Karla", sans-serif;
     --fonte--secundaria: "Mada", sans-serif;
@@ -166,7 +167,6 @@ body{
         font-size: 1rem;
         padding: 5% 0 100px 0;
     }
-
 }
 /* RESPONSIVIDADE - CELULAR */
 @media (max-width: 800px) {
