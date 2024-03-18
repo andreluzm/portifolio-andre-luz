@@ -1,14 +1,10 @@
 /* MENU HAMBURGUER CELULAR */
-.cabecalho__menu__celular{
-    display: flex;
-    justify-content: end;
-    background-image: url("../assets/menu.png");
-}
+
 .cabecalho {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--cor-background);
+    background-color: var(--cor-background); /*Deixar esse em transparente do media*/
 }
 
 .cabecalho__menu {
@@ -42,7 +38,22 @@
 
 /* RESPONSIVIDADE - CELULAR */
 @media (max-width: 800px){
+    /* MENU LATERAL DO CELULAR - APAGA O CABEÇALHO COM NOMES E ADICIONA O MENU HAMBURUER */
+    .cabecalho {
+        background-color: transparent;
+    }
     .cabecalho__menu {
         display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
+    }
+    .cabecalho__celular{
+        display: flex;
+        justify-content: flex-end;
+        padding: 4% 4% 0 0;
+    }
+    .cabecalho__menu__celular{
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background-image: url("../assets/list.svg");
     }
 }
