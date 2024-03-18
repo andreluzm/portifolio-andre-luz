@@ -30,35 +30,6 @@ body{
     width: 100%;
 }
 
-.cabecalho {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--cor-background);
-}
-
-.cabecalho__menu {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 5%;
-    padding: 2%;
-}
-
-.cabecalho__menu__link {
-    font-family: var(--fonte--primaria);
-    font-size: 1.875rem;
-    font-weight: 600;
-    background-image: var(--cor--primaria);
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
-
-.cabecalho__menu__link:hover {
-    background-image: var(--cor--hover);
-}
-
 /* PRIMEIRA PÁGINA */
 /* -------------------------------------------------------------------------------- */
 .portifolio {
@@ -118,8 +89,6 @@ body{
         width: 20ch;
     }
 }
-/* -------------------------------------------------------------------------------- */
-
 
 /* SEGUNDA PÁGINA */
 /* -------------------------------------------------------------------------------- */
@@ -158,16 +127,22 @@ body{
     padding-bottom: 7%;
     justify-content: center;
 }
-/* -------------------------------------------------------------------------------- */
 /* TERCEIRA PÁGINA */
-
+.about_thirdpage{
+}
+.about_thirdpage__titulo{
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--secundaria);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    padding: 8% 0 10% 0;
+}
 /* -------------------------------------------------------------------------------- */
 
 /* RESPONSIVIDADE - TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
-    .cabecalho__menu__link {
-        font-size: 1rem;
-    }
     .portifolio__firstpage {
         padding-top: 20%;
     }
@@ -210,11 +185,7 @@ body{
     .portifolio__firstpage {
         padding-top: 40%;
     }
-    .cabecalho__menu {
-        display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
-    }
-        /* !!!!!!! - ADICIONAR MENU LATERAL */
-
+    
                     /* segunda página */
     .about__secondpage__titulo {
         padding: 100% 0 10% 0;

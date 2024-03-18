@@ -1,0 +1,48 @@
+/* MENU HAMBURGUER CELULAR */
+.cabecalho__menu__celular{
+    display: flex;
+    justify-content: end;
+    background-image: url("../assets/menu.png");
+}
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-background);
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    padding: 2%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte--primaria);
+    font-size: 1.875rem;
+    font-weight: 600;
+    background-image: var(--cor--primaria);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.cabecalho__menu__link:hover {
+    background-image: var(--cor--hover);
+}
+
+/* RESPONSIVIDADE - TABLETS */
+@media (min-width: 768px) and (max-width: 1700px) {
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+}
+
+/* RESPONSIVIDADE - CELULAR */
+@media (max-width: 800px){
+    .cabecalho__menu {
+        display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
+    }
+}
