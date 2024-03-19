@@ -6,6 +6,7 @@
     --cor--secundaria: #B4A5A5;
     --cor--hover: linear-gradient(#FFFFFF, #913535);
     --cor--menu-hamburguer: linear-gradient(#0D0732, #000000);
+    --blur--background: filter:blur(3px);
 
     --fonte--primaria: "Karla", sans-serif;
     --fonte--secundaria: "Mada", sans-serif;

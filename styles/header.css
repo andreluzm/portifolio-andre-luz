@@ -56,23 +56,25 @@
         display: none; /*Tira o menu do cabeçalho para adicionar o menu lateral*/
     }
     .cabecalho__menu__link {
-        font-size: 1.15rem;
-        padding: 1em;
+        font-size: 1.2rem;
+        padding: 1.3em;
     }
     .cabecalho__celular{
         display: flex;
+        opacity: 90%;
     }
     .imagem__lista{ 
         width: 26px;
         height: 26px;
         display: flex;
         position: absolute;
-
+        margin: 5%;
     }
     .cabecalho__botao:checked~.lista-menu { /* FUNÇÃO DO MENU CELULAR */
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-image: var(--cor--menu-hamburguer);
-        padding: 5%;
+        padding: 10%;
         text-align: center;
     }
 }
