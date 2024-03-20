@@ -254,5 +254,11 @@ body{
     .box__texto { /* TEXTO DO BOX */
         font-size: 1rem;
     }
+    .fileira__skills{ /* FILEIRA DE 3 BOXS VERMELHO */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
