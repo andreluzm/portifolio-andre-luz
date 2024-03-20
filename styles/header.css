@@ -36,8 +36,9 @@
     display: none;
     padding: 6% 0 0 0;
 }
-
-
+.imagem__lista {
+    display: none;
+}
 
 /* RESPONSIVIDADE - TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {

@@ -140,6 +140,23 @@ body{
     font-weight: 400;
     padding: 8% 0 10% 0;
 }
+.skills {
+    display: flex;
+}
+.skills__box {
+    display: flex;
+    flex-direction: column;
+}
+.logo-titulo__box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills_titulos {
+    font-family: var(--fonte--primaria);
+    color: var(--cor--secundaria);
+}
 /* -------------------------------------------------------------------------------- */
 /* RESPONSIVIDADE - TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
