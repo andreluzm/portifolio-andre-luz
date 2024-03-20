@@ -7,6 +7,7 @@
     --cor--hover: linear-gradient(#FFFFFF, #913535);
     --cor--menu-hamburguer: linear-gradient(#0D0732, #000000);
     --cor--boxs: #371313;
+    --cor--background--footer: linear-gradient(#040D12,#4f1313);
 
     --fonte--primaria: "Karla", sans-serif;
     --fonte--secundaria: "Mada", sans-serif;
@@ -25,6 +26,7 @@
 body{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: 100%;
     list-style-type: none;
     background-color: var(--cor-background);
@@ -32,8 +34,7 @@ body{
     width: 100%;
 }
 
-/* PRIMEIRA PÁGINA */
-/* -------------------------------------------------------------------------------- */
+/* ___________________________________________________PRIMEIRA PÁGINA___________________________________________________ */
 .portifolio {
     display: block;
     flex-direction: column;
@@ -92,8 +93,8 @@ body{
     }
 }
 
-/* SEGUNDA PÁGINA */
-/* -------------------------------------------------------------------------------- */
+/*___________________________________________________SEGUNDA PÁGINA___________________________________________________ */
+
 .about__secondpage {
     display: flex;
     align-items: center;
@@ -129,7 +130,7 @@ body{
     padding-bottom: 7%;
     justify-content: center;
 }
-/* TERCEIRA PÁGINA */
+/* ___________________________________________________TERCEIRA PÁGINA___________________________________________________ */
 
 .about_thirdpage__titulo{
     font-family: var(--fonte--secundaria);
@@ -188,8 +189,8 @@ body{
     width: 90%;
     margin-top: 10%;
 }
-/* -------------------------------------------------------------------------------- */
-/* RESPONSIVIDADE - TABLETS */
+/* ___________________________________________________RESPONSIVIDADE___________________________________________________ */
+/*TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
     .portifolio__firstpage {
         padding-top: 25%;
@@ -220,7 +221,7 @@ body{
         font-size: 1.07rem;
     }
 }
-/* RESPONSIVIDADE - CELULAR */
+/*CELULAR */
 @media (max-width: 800px) {
                     /* primeira página */   
     .portifolio__firstpage__hello {
@@ -252,12 +253,15 @@ body{
         padding: 10% 0 10% 0;
     }
     .box__texto { /* TEXTO DO BOX */
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .fileira__skills{ /* FILEIRA DE 3 BOXS VERMELHO */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .skills__box {
+        margin: 3% 0 3% 0;
     }
 }

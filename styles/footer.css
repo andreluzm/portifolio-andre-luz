@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: var(--cor--background--footer);
+    top: 0;
+    height: 150px;
+    width: 100%;
+}
+.footer__texto {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--secundaria);
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+}
