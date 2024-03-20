@@ -264,4 +264,7 @@ body{
     .skills__box {
         margin: 3% 0 3% 0;
     }
+    .footer__texto{
+        font-size: 0.8rem;
+    }
 }
