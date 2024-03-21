@@ -33,6 +33,9 @@ body{
     height: auto;
     width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* ___________________________________________________PRIMEIRA PÁGINA___________________________________________________ */
 
@@ -189,9 +192,6 @@ body{
     justify-content: center;
     width: 90%;
     margin-top: 10%;
-}
-.html {
-    scroll-behavior: smooth;
 }
 /* ___________________________________________________RESPONSIVIDADE___________________________________________________ */
 /*TABLETS */
