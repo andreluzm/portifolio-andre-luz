@@ -35,9 +35,6 @@ body{
 }
 
 /* ___________________________________________________PRIMEIRA PÁGINA___________________________________________________ */
-.html {
-    scroll-behavior: smooth;
-}
 
 .portifolio {
     display: block;
@@ -192,6 +189,9 @@ body{
     justify-content: center;
     width: 90%;
     margin-top: 10%;
+}
+.html {
+    scroll-behavior: smooth;
 }
 /* ___________________________________________________RESPONSIVIDADE___________________________________________________ */
 /*TABLETS */
