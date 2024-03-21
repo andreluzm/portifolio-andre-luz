@@ -35,6 +35,10 @@ body{
 }
 
 /* ___________________________________________________PRIMEIRA PÁGINA___________________________________________________ */
+.html {
+    scroll-behavior: smooth;
+}
+
 .portifolio {
     display: block;
     flex-direction: column;
@@ -104,7 +108,7 @@ body{
     font-family: var(--fonte--secundaria);
     color: var(--cor--secundaria);
     justify-content: center;
-    padding: 30% 0 10% 0;
+    padding: 25% 0 10% 0;
     font-size: 3rem;
     font-weight: 400;
 }

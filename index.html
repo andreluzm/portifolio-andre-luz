@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,11 @@
 <body>
     <header class="cabecalho"> 
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#">HOME</a>
-            <a class="cabecalho__menu__link" href="#about__secondpage__titulo">ABOUT ME</a>
-            <a class="cabecalho__menu__link" href="#">SKILLS</a>
-            <a class="cabecalho__menu__link" href="#">WORKS</a>
-            <a class="cabecalho__menu__link" href="#">CONTACT</a>
+            <a class="cabecalho__menu__link" href="#home">HOME</a>
+            <a class="cabecalho__menu__link" href="#about-me">ABOUT</a>
+            <a class="cabecalho__menu__link" href="#skills">SKILLS</a>
+            <a class="cabecalho__menu__link" href="#works">WORKS</a>
+            <a class="cabecalho__menu__link" href="#contact-me">CONTACT</a>
         </nav>
         <div class="cabecalho__celular">
             <label for="menu">
@@ -24,24 +24,24 @@
             <input type="checkbox" id="menu" class="cabecalho__botao"> <!-- CHECKBOX PARA ABRIR E FECHAR MENU HAMBURGUER -->
             <ul class="lista-menu">
                 <li>
-                    <a class="cabecalho__menu__link" href="#">HOME</a>
+                    <a class="cabecalho__menu__link" href="#home">HOME</a>
                 </li>
                 <li>
-                    <a class="cabecalho__menu__link" href="#about-me">ABOUT ME</a>
+                    <a class="cabecalho__menu__link" href="#about-me">ABOUT</a>
                 </li>
                 <li>
-                    <a class="cabecalho__menu__link" href="#">SKILLS</a>
+                    <a class="cabecalho__menu__link" href="#skills">SKILLS</a>
                 </li>
                 <li>
-                    <a class="cabecalho__menu__link" href="#">WORKS</a>
+                    <a class="cabecalho__menu__link" href="#works">WORKS</a>
                 </li>
                 <li>
-                    <a class="cabecalho__menu__link" href="#">CONTACT</a>
+                    <a class="cabecalho__menu__link" href="#contact-me">CONTACT</a>
                 </li>
             </ul>
         </div>
     </header>
-    <main class="portifolio">
+    <main id="home", class="portifolio">
 <!-- 1ª página - HOME -->
         <section class="portifolio__firstpage">
             <h2 class="portifolio__firstpage__hello">Hello. I'm</h2>
@@ -49,8 +49,8 @@
             <h3 class="portifolio__firstpage__subtitulo"> a front-end developer </h3>
          </section>   
 <!-- 2ª página ABOUT ME -->
-         <section class="about__secondpage">
-            <h1 id="about-me" class="about__secondpage__titulo">Who am I?</h1>
+         <section id="about-me" class="about__secondpage">
+            <h1 class="about__secondpage__titulo">Who am I?</h1>
             <div class="about__secondpage__imagens">  
                 <img class="fotos" src="assets/cristoredentor.png" alt="andré 1">
                 <img class="fotos" src="assets/andredelado.png" alt="andré 2">
@@ -77,7 +77,7 @@
          </section>
 <!-- 3ª página SKILLS -->
          <section class="about_thirdpage">
-            <h2 class="about_thirdpage__titulo">SKILL-SET</h2>
+            <h2 id="skills" class="about_thirdpage__titulo">Skills</h2>
             <!-- BOXS DAS HABILIDADES -->
             <div class="skills">
 <!-- FILEIRA 1 -->
@@ -163,6 +163,10 @@
                 </div>
 
             </div>
+         </section>
+         <!-- <section id="works" class="PROJETOS"></section>  ///SESSÃO DE PROJETOS/// -->
+         <section class="contact-me">
+            <h1 id="contact-me" class="contact-me__titulo">Contact-me?</h1>
          </section>
 
 
