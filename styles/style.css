@@ -139,11 +139,12 @@ html{
 .about_thirdpage__titulo{
     font-family: var(--fonte--secundaria);
     color: var(--cor--secundaria);
-    font-size: 2rem;
     display: flex;
     justify-content: center;
+    padding: 8% 0 5% 0;
+    font-size: 3rem;
     font-weight: 400;
-    padding: 8% 0 10% 0;
+    
 }
 .skills {
     display: flex;
