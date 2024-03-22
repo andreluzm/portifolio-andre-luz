@@ -200,6 +200,10 @@ html{
     display: flex;
     flex-direction: column;
 }
+.contact-me__inputs{
+    display: flex;
+    flex-direction: column;
+}
 .faixa__contact{
     display: flex;
     justify-content: space-around;
@@ -223,7 +227,6 @@ html{
     gap: 20%;
     justify-content: center;
 }
-
 
 
 /* ___________________________________________________RESPONSIVIDADE___________________________________________________ */
@@ -309,9 +312,11 @@ html{
     }
     .faixa__contact{
         flex-direction: column;
+        align-items: center;
     }
     .wave-group .bar {
         width: 90%; /* TAMANHO DA BARRA */
+        
     }
       .wave-group .input {
         width: 90%;  /* TAMANHO DA BARRA */
