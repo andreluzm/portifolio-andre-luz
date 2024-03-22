@@ -211,7 +211,7 @@ html{
     .portifolio__firstpage__subtitulo {
         font-size: 1rem;
     }
-    .about__secondpage__titulo {
+    .about__secondpage__titulo, .about_thirdpage__titulo {
         font-size: 2rem;
         padding: 30% 0 5% 0;
     }
@@ -242,7 +242,7 @@ html{
         padding-top: 70%;
     }
                     /* segunda página */
-    .about__secondpage__titulo {
+    .about__secondpage__titulo, .about_thirdpage__titulo {
         padding: 100% 0 10% 0;
         font-size: 1.5rem;
     }
