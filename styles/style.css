@@ -8,6 +8,7 @@
     --cor--menu-hamburguer: linear-gradient(#0D0732, #000000);
     --cor--boxs: #371313;
     --cor--background--footer: linear-gradient(#040D12,#4f1313);
+    --cor--secundaria--contato: #364569;
 
     --fonte--primaria: "Karla", sans-serif;
     --fonte--secundaria: "Mada", sans-serif;
@@ -194,6 +195,37 @@ html{
     width: 90%;
     margin-top: 10%;
 }
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+}
+.faixa__contact{
+    display: flex;
+    justify-content: space-around;
+
+}
+.contact-me__texto{
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--secundaria);
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    padding: 7% 0 5% 20%;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.contato__esquedo {
+    display: flex;
+}
+.contact__logos{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+
+
+
 /* ___________________________________________________RESPONSIVIDADE___________________________________________________ */
 /*TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
@@ -271,5 +303,17 @@ html{
     }
     .footer__texto{
         font-size: 0.8rem;
+    }
+    .contact-me__texto{
+    width: 90%;
+    }
+    .faixa__contact{
+        flex-direction: column;
+    }
+    .wave-group .bar {
+        width: 90%; /* TAMANHO DA BARRA */
+    }
+      .wave-group .input {
+        width: 90%;  /* TAMANHO DA BARRA */
     }
 }

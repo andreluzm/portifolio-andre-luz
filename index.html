@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/header.css">  
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/formulario.css">
     </head>
     <body>
         <header class="cabecalho"> 
@@ -14,7 +15,7 @@
                 <a class="cabecalho__menu__link" href="#home">HOME</a>
                 <a class="cabecalho__menu__link" href="#about-me">ABOUT</a>
                 <a class="cabecalho__menu__link" href="#skills">SKILLS</a>
-                <a class="cabecalho__menu__link" href="#works">WORKS</a>
+<!-- PARA PROJETOS <a class="cabecalho__menu__link" href="#works">WORKS</a> -->
                 <a class="cabecalho__menu__link" href="#contact-me">CONTACT</a>
             </nav>
             <div class="cabecalho__celular">
@@ -32,9 +33,9 @@
                     <li>
                         <a class="cabecalho__menu__link" href="#skills">SKILLS</a>
                     </li>
-                    <li>
-                        <a class="cabecalho__menu__link" href="#works">WORKS</a>
-                    </li>
+                    <!-- <li>
+<!-- PARA PROJETOS  <a class="cabecalho__menu__link" href="#works">WORKS</a>
+                    </li> -->
                     <li>
                         <a class="cabecalho__menu__link" href="#contact-me">CONTACT</a>
                     </li>
@@ -42,13 +43,13 @@
             </div>
         </header>
         <main id="home", class="portifolio">
-    <!-- 1ª página - HOME -->
+<!-- 1ª página - HOME -->
             <section class="portifolio__firstpage">
                 <h2 class="portifolio__firstpage__hello">Hello. I'm</h2>
                 <h1 class="portifolio__firstpage__name">ANDRÉ LUZ</h1>
                 <h3 class="portifolio__firstpage__subtitulo"> a front-end developer </h3>
             </section>   
-    <!-- 2ª página ABOUT ME -->
+<!-- 2ª página ABOUT ME -->
             <section id="about-me" class="about__secondpage">
                 <h1 class="about__secondpage__titulo">Who am I?</h1>
                 <div class="about__secondpage__imagens">  
@@ -75,7 +76,7 @@
                     </a>
                 </div>
             </section>
-    <!-- 3ª página SKILLS -->
+ <!-- 3ª página SKILLS -->
             <section class="about_thirdpage">
                 <h2 id="skills" class="about_thirdpage__titulo">Skills</h2>
                 <!-- BOXS DAS HABILIDADES -->
@@ -165,10 +166,80 @@
                 </div>
             </section>
             <!-- <section id="works" class="PROJETOS"></section>  ///SESSÃO DE PROJETOS/// -->
-            <section class="contact-me">
-                <h1 id="contact-me" class="contact-me__titulo">Contact-me?</h1>
+<!-- 4ª página CONTACT-ME -->
+            <section id="contact-me" class="contact-me">
+                <div>
+                    <h2 id="contact-me" class="contact-me__texto">Sinta-se a vontade para fazer qualquer pergunta. Estou aqui para ajudar!</h2>
+                </div>
+<!-- NOME,EMAIL E MENSAGEM -->
+                <div class="faixa__contact">
+                    <form class="contact-me__inputs" action="#">
+                        <div class="wave-group">
+                            <input type="text" class="input" maxlength="30" required>
+                            <span class="bar"></span>
+                            <label class="label">
+                                <span class="label-char" style="--index: 0">N</span>
+                                <span class="label-char" style="--index: 1">a</span>
+                                <span class="label-char" style="--index: 2">m</span>
+                                <span class="label-char" style="--index: 3">e</span>
+                            </label>
+                        </div>
+                        <div class="wave-group">
+                            <input type="text" class="input" maxlength="40" required>
+                            <span class="bar"></span>
+                            <label class="label">
+                                <span class="label-char" style="--index: 0">E</span>
+                                <span class="label-char" style="--index: 1">m</span>
+                                <span class="label-char" style="--index: 2">a</span>
+                                <span class="label-char" style="--index: 3">i</span>
+                                <span class="label-char" style="--index: 4">l</span>
+                            </label>
+                        </div>
+                        <div class="wave-group">
+                            <input type="text" class="input" maxlength="100" required>
+                            <span class="bar"></span>
+                            <label class="label">
+                                <span class="label-char" style="--index: 0">M</span>
+                                <span class="label-char" style="--index: 1">e</span>
+                                <span class="label-char" style="--index: 2">n</span>
+                                <span class="label-char" style="--index: 3">s</span>
+                                <span class="label-char" style="--index: 4">a</span>
+                                <span class="label-char" style="--index: 3">g</span>
+                                <span class="label-char" style="--index: 4">e</span>
+                                <span class="label-char" style="--index: 4">m</span>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="contato__esquedo">
+                        <div>
+                            <div class="contact__logos">
+                                <a class="contact-me__contatos__icones__logo" href="https://github.com/andreluzm" target="_blank">
+                                    <img src="assets/logo-github.png" alt="github logo">
+                                </a>
+                                <a class="contact-me__contatos__icones__logo" href="https://www.linkedin.com/in/andreluzm" target="_blank">
+                                    <img src="assets/logo-linkedin.png" alt="linkedin logo">
+                                </a>
+                                <a class="contact-me__contatos__icones__logo" href="https://www.instagram.com/andre.luzm" target="_blank">
+                                    <img src="assets/logo-intagram.png" alt="intagram logo">
+                                </a>
+                            </div> 
+                            <a href="https://wa.me/55011971703345" target="_blank">
+                                <img src="assets/email-logo.png" alt="email logo">
+                                <h4 class="texto__logo">andre.luzmo@gmail.com</h4>
+                            </a>
+                            <a href="https://wa.me/55011971703345" target="_blank">
+                                <img src="assets/whatsapp logo.png" alt="whatsapp logo">
+                                <h4 class="texto__logo">+55 11 971703345</h4>
+                            </a>
+                            <a href="https://wa.me/55011971703345" target="_blank">
+                                <img src="assets/whatsapp logo.png" alt="whatsapp logo">
+                                <h4 class="texto__logo">CV DONWLOAD</h4>
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+                
             </section>
-
 
         </main>
 
