@@ -9,6 +9,7 @@
     --cor--boxs: #371313;
     --cor--background--footer: linear-gradient(#040D12,#4f1313);
     --cor--secundaria--contato: #364569;
+    --cor--box--contato: #913535;
 
     --fonte--primaria: "Karla", sans-serif;
     --fonte--secundaria: "Mada", sans-serif;
@@ -195,18 +196,22 @@ html{
     width: 90%;
     margin-top: 10%;
 }
+/* ___________________________________________________QUARTA PÁGINA___________________________________________________ */
 
 .contact-me{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .contact-me__inputs{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .faixa__contact{
     display: flex;
     justify-content: space-around;
+    margin: 0 10% 0 10%;
 
 }
 .contact-me__texto{
@@ -220,12 +225,47 @@ html{
     font-weight: 800;
 }
 .contato__esquedo {
-    display: flex;
+  
 }
 .contact__logos{
     display: flex;
-    gap: 20%;
+    gap: 10%;
+    margin-bottom: 5%;
     justify-content: center;
+}
+.email-whats-cv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+.box__email-whats-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor--box--contato);
+    width: 280px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 5%;
+}
+.texto__logo{
+    font-family: var(--fonte--secundaria);
+    color: var(--cor-background);
+    width: 50%;
+    padding: 0% 5% 0% 0%;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+}
+.logo__email-whats-cv{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5% 0 -3%;
+    width: 40px;
+    height: 40px;
+
 }
 
 
@@ -307,18 +347,20 @@ html{
     .footer__texto{
         font-size: 0.8rem;
     }
-    .contact-me__texto{
-    width: 90%;
-    }
     .faixa__contact{
         flex-direction: column;
         align-items: center;
+        margin: 0 2% 0 2%;
     }
-    .wave-group .bar {
-        width: 90%; /* TAMANHO DA BARRA */
+    .wave-group .bar .wave-group .input{
+        width: 100px; /* TAMANHO DA BARRA */
         
     }
-      .wave-group .input {
-        width: 90%;  /* TAMANHO DA BARRA */
+    .contato__esquedo{
+        margin-top: 10%;
+    }
+    .contact-me__texto{
+        width: 90%;
+        font-size: 1.8rem;
     }
 }
