@@ -224,9 +224,6 @@ html{
     font-size: 3rem;
     font-weight: 800;
 }
-.contato__esquedo {
-  
-}
 .contact__logos{
     display: flex;
     gap: 10%;
@@ -236,7 +233,7 @@ html{
 .email-whats-cv{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     }
 .box__email-whats-cv{
     display: flex;
