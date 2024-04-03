@@ -189,7 +189,7 @@ html{
     display: flex;
     font-family: var(--fonte--maquina);
     color: var(--cor--secundaria);
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -295,7 +295,7 @@ html{
         padding: 5% 0 100px 0;
     }
     .box__texto { /* TEXTO DO BOX */
-        font-size: 1.07rem;
+        font-size: 0.8rem;
     }
 }
 /*CELULAR */
@@ -330,7 +330,7 @@ html{
         padding: 10% 0 10% 0;
     }
     .box__texto { /* TEXTO DO BOX */
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
     .fileira__skills{ /* FILEIRA DE 3 BOXS VERMELHO */
         display: flex;
