@@ -78,6 +78,7 @@
 .posicao__botao{
   display: flex;
   justify-content: center;
+  padding: 0 0 20% 0 ;
 }
 .botao {
   appearance: none;
