@@ -173,9 +173,15 @@
                 </div>
 <!-- NOME,EMAIL E MENSAGEM -->
                 <div class="faixa__contact">
-                    <form class="contact-me__inputs" action="#">
+                    <!-- action= para qual servidor vai ser enviado // method= como vai ser enviado (post=vai salvar as informações; get=vai consultar; update=Atualizar uma informação; delete=deletar uma informação) -->
+                    <form action="https://api.staticforms.xyz/submit" method="post" class="contact-me__inputs" action="#">
+                        <!-- input com codigo para enviar o formulario para o meu email -->
+                        <input type="hidden" name="accessKey" value="c5771b7c-3c16-4832-8784-c0ef9034e770">
+                        <!-- input que faz voltar para a pagina depois de enviar o formulario -->
+                        <input type="hidden" name="redirectTo" value="#contact-me">
+                        
                         <div class="wave-group">
-                            <input type="text" class="input" name="nome" maxlength="30" required>
+                            <input type="text" class="input" name="name" maxlength="30" required>
                             <span class="bar"></span>
                             <label class="label">
                                 <span class="label-char" style="--index: 0">N</span>
@@ -196,7 +202,8 @@
                             </label>
                         </div>
                         <div class="wave-group">
-                            <input type="text" class="input" name="mensagem" maxlength="100" required>
+                            <!-- <input type="text" class="input" name="message" maxlength="100" required> -->
+                            <textarea type="text" class="input" name="message" maxlength="300" required></textarea>
                             <span class="bar"></span>
                             <label class="label">
                                 <span class="label-char" style="--index: 0">M</span>
@@ -208,6 +215,9 @@
                                 <span class="label-char" style="--index: 4">e</span>
                                 <span class="label-char" style="--index: 4">m</span>
                             </label>
+                        </div>
+                        <div class="posicao__botao">
+                            <button class="botao">Enviar</button>
                         </div>
                     </form>
                     <div class="contato__esquedo">
