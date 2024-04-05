@@ -13,10 +13,10 @@
         <header class="cabecalho"> 
             <nav class="cabecalho__menu">
                 <a class="cabecalho__menu__link" href="#home">HOME</a>
-                <a class="cabecalho__menu__link" href="#about-me">ABOUT</a>
+                <a class="cabecalho__menu__link" href="#about-me">SOBRE</a>
                 <a class="cabecalho__menu__link" href="#skills">SKILLS</a>
 <!-- PARA PROJETOS <a class="cabecalho__menu__link" href="#works">WORKS</a> -->
-                <a class="cabecalho__menu__link" href="#contact-me">CONTACT</a>
+                <a class="cabecalho__menu__link" href="#contact-me">CONTATO</a>
             </nav>
             <div class="cabecalho__celular">
                 <label for="menu">
@@ -28,7 +28,7 @@
                         <a class="cabecalho__menu__link" href="#home">HOME</a>
                     </li>
                     <li>
-                        <a class="cabecalho__menu__link" href="#about-me">ABOUT</a>
+                        <a class="cabecalho__menu__link" href="#about-me">SOBRE</a>
                     </li>
                     <li>
                         <a class="cabecalho__menu__link" href="#skills">SKILLS</a>
@@ -37,7 +37,7 @@
 <!-- PARA PROJETOS  <a class="cabecalho__menu__link" href="#works">WORKS</a>
                     </li> -->
                     <li>
-                        <a class="cabecalho__menu__link" href="#contact-me">CONTACT</a>
+                        <a class="cabecalho__menu__link" href="#contact-me">CONTATO</a>
                     </li>
                 </ul>
             </div>
@@ -47,11 +47,11 @@
             <section class="portifolio__firstpage">
                 <h2 class="portifolio__firstpage__hello">Hello. I'm</h2>
                 <h1 class="portifolio__firstpage__name">ANDRÉ LUZ</h1>
-                <h3 class="portifolio__firstpage__subtitulo"> a front-end developer </h3>
+                <h3 class="portifolio__firstpage__subtitulo"> Um desenvolvedor front-end</h3>
             </section>   
 <!-- 2ª página ABOUT ME -->
             <section id="about-me" class="about__secondpage">
-                <h1 class="about__secondpage__titulo">Who am I?</h1>
+                <h1 class="about__secondpage__titulo">Sobre mim</h1>
                 <div class="about__secondpage__imagens">  
                     <img class="fotos" src="assets/cristoredentor.png" alt="andré 1">
                     <img class="fotos" src="assets/andredelado.png" alt="andré 2">
@@ -77,8 +77,8 @@
                 </div>
             </section>
  <!-- 3ª página SKILLS -->
-            <section class="about_thirdpage">
-                <h2 id="skills" class="about_thirdpage__titulo">Skills</h2>
+            <section id="skills" class="about_thirdpage">
+                <h2 class="about_thirdpage__titulo">Skills</h2>
                 <!-- BOXS DAS HABILIDADES -->
                 <div class="skills">
     <!-- FILEIRA 1 -->
@@ -169,13 +169,13 @@
 <!-- 4ª página CONTACT-ME -->
             <section id="contact-me" class="contact-me">
                 <div>
-                    <h2 id="contact-me" class="contact-me__texto">Sinta-se a vontade para fazer qualquer pergunta. Estou aqui para ajudar!</h2>
+                    <h2 id="contact-me" class="contact-me__texto">Vamos conversar?</h2>
                 </div>
 <!-- NOME,EMAIL E MENSAGEM -->
                 <div class="faixa__contact">
                     <form class="contact-me__inputs" action="#">
                         <div class="wave-group">
-                            <input type="text" class="input" maxlength="30" required>
+                            <input type="text" class="input" name="nome" maxlength="30" required>
                             <span class="bar"></span>
                             <label class="label">
                                 <span class="label-char" style="--index: 0">N</span>
@@ -185,7 +185,7 @@
                             </label>
                         </div>
                         <div class="wave-group">
-                            <input type="text" class="input" maxlength="40" required>
+                            <input type="text" class="input" name="email" maxlength="40" required>
                             <span class="bar"></span>
                             <label class="label">
                                 <span class="label-char" style="--index: 0">E</span>
@@ -196,7 +196,7 @@
                             </label>
                         </div>
                         <div class="wave-group">
-                            <input type="text" class="input" maxlength="100" required>
+                            <input type="text" class="input" name="mensagem" maxlength="100" required>
                             <span class="bar"></span>
                             <label class="label">
                                 <span class="label-char" style="--index: 0">M</span>
