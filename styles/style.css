@@ -265,12 +265,11 @@ html{
 
 }
 
-
 /* ___________________________________________________RESPONSIVIDADE___________________________________________________ */
 /*TABLETS */
 @media (min-width: 768px) and (max-width: 1700px) {
     .portifolio__firstpage {
-        padding-top: 25%;
+        padding: 25% 0 30% 0;
     }
     .portifolio__firstpage__hello {
         font-size: 2rem;
@@ -285,7 +284,7 @@ html{
     }
     .about__secondpage__titulo, .about_thirdpage__titulo {
         font-size: 2rem;
-        padding: 30% 0 5% 0;
+        padding: 0 0 5% 0;
     }
     .fotos {   /* criado o .fotos apenas para definir o tamanho da foto no @media */
         width: 200px;
@@ -296,6 +295,10 @@ html{
     }
     .box__texto { /* TEXTO DO BOX */
         font-size: 0.8rem;
+    }
+    .contact-me__texto{
+        width: 80%;
+        font-size: 1.7rem;
     }
 }
 /*CELULAR */
